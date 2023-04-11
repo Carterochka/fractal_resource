@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fractal Art</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        .parallax-container {
+            height: 400px;
+        }
+        section {
+            padding: 50px 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav style="position: fixed;">
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo">Fractal Art</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#nature">Fractals in Nature</a></li>
+                <li><a href="#mathematics">Fractal Mathematics</a></li>
+                <li><a href="#digital-art">Fractals in Digital Art</a></li>
+                <li><a href="#creating-art">Creating Fractal Art</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Introduction -->
+    <section id="introduction">
+        <div class="container">
+            <h2>Introduction</h2>
+            <p>Brief introduction to fractals, their relevance in mathematics, nature, and digital art.</p>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/1.jpg" alt="Parallax Image"></div>
+    </div>
+
+    <!-- Fractals in Nature -->
+    <section id="nature">
+        <div class="container">
+            <h2>Fractals in Nature</h2>
+            <p>Explanation of fractals in various natural phenomena and examples of natural fractals.</p>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/2.jpg" alt="Parallax Image"></div>
+    </div>
+
+    <!-- Fractal Mathematics -->
+    <section id="mathematics">
+        <div class="container">
+            <h2>Fractal Mathematics</h2>
+            <p>Introduction to the mathematical concepts behind fractals and famous examples.</p>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/3.jpg" alt="Parallax Image"></div>
+    </div>
+
+    <!-- Fractals in Digital Art -->
+    <section id="digital-art">
+        <div class="container">
+            <h2>Fractals in Digital Art</h2>
+            <p>Significance of fractals in digital art and techniques for generating fractal art.</p>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/4.jpg" alt="Parallax Image"></div>
+    </div>
+
+    <!--Creating Fractal Art with Python -->
+    <section id="creating-art">
+        <div class="container">
+            <h2>Creating Fractal Art with Python</h2>
+            <p>Tutorial on generating basic fractal art using Python and introduction to the built-in Python interpreter on the website.</p>
+
+            <iframe src="https://trinket.io/embed/python/e9827ca523" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/5.jpg" alt="Parallax Image"></div>
+    </div>
+    
+    <!-- Fractal Art Gallery -->
+    <section id="gallery">
+        <div class="container">
+            <h2>Fractal Art Gallery</h2>
+            <p>Showcase of user-generated fractal art and submission form for users to share their own creations.</p>
+        </div>
+    </section>
+    
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/6.jpg" alt="Parallax Image"></div>
+    </div>
+    
+    <!-- Resources and Further Learning -->
+    <section id="resources">
+        <div class="container">
+            <h2>Resources and Further Learning</h2>
+            <p>List of resources for users to explore more about fractals, including books, research papers, online courses, and more.</p>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="page-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Fractal Art</h5>
+                    <p class="grey-text text-lighten-4">An educational resource on fractals and their importance in digital art.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var elems = document.querySelectorAll('.parallax');
+            var instances = M.Parallax.init(elems);
+        });
+    </script>
+</body>
+</html>
