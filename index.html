@@ -1,27 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fractal Art</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-    <style>
-        .parallax-container {
-            height: 400px;
-        }
-        section {
-            padding: 50px 0;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
+
 <body>
     <!-- Navigation -->
-    <nav style="position: fixed;">
+    <nav style="position: fixed; z-index: 2;">
         <div class="nav-wrapper">
-            <a href="#" class="brand-logo">Fractal Art</a>
+            <a href="#" class="brand-logo" style="margin-left: 2%;">Fractal Art</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
                 <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#definition">What are Fractals?</a></li>
                 <li><a href="#nature">Fractals in Nature</a></li>
                 <li><a href="#mathematics">Fractal Mathematics</a></li>
                 <li><a href="#digital-art">Fractals in Digital Art</a></li>
@@ -34,7 +30,25 @@
     <section id="introduction">
         <div class="container">
             <h2>Introduction</h2>
-            <p>Brief introduction to fractals, their relevance in mathematics, nature, and digital art.</p>
+            <p>Fractals are mesmerizing, infinitely complex patterns that display self-similarity across various scales.
+                They are mathematical constructs characterized by their intricate and recursive structures, making them
+                a captivating subject of study. The term "fractal" was introduced by Benoit Mandelbrot in 1975,
+                originating from the Latin word "fractus," which means "broken" or "fractured." Fractals exhibit unique
+                properties, such as fractional dimensions, recursion, and infinite complexity.</p>
+            <p>In mathematics, fractals provide insights into chaotic systems and help visualize complex geometries.
+                They serve as a bridge between order and chaos, allowing us to understand the underlying patterns in
+                seemingly random systems.</p>
+            <p>Nature is abundant with fractal patterns, from the arrangement of leaves on a plant to the branching of
+                trees and the intricate design of snowflakes. These patterns enable nature to optimize various
+                processes, such as nutrient distribution and space utilization. Fractals in nature often exhibit a high
+                degree of efficiency and resilience.</p>
+            <p>In digital art, fractals have revolutionized the way artists and designers create visually stunning and
+                intricate designs. They enable the generation of highly detailed, scalable images with a relatively
+                simple set of rules. Fractal-based techniques are widely used in computer graphics, special effects, and
+                animation, making the seemingly impossible a reality.</p>
+            <p>Join us as we delve into the fascinating world of fractals, exploring their properties, their presence in
+                mathematics and nature, and their significant impact on digital art. Let's embark on a journey to unveil
+                the endless patterns of infinity.</p>
         </div>
     </section>
 
@@ -42,11 +56,57 @@
         <div class="parallax"><img src="img/1.jpg" alt="Parallax Image"></div>
     </div>
 
-    <!-- Fractals in Nature -->
-    <section id="nature">
+    <!-- What are Fractals? -->
+    <section id="definition">
         <div class="container">
-            <h2>Fractals in Nature</h2>
-            <p>Explanation of fractals in various natural phenomena and examples of natural fractals.</p>
+            <h2>What are Fractals?</h2>
+            <p>Fractals are a unique class of geometric shapes characterized by their intricate patterns and recursive
+                structures. These remarkable shapes possess several key features, which distinguish them from
+                traditional Euclidean geometry:</p>
+            <div class="flex-container">
+                <div class="fractal-features-list">
+                    <ol>
+                        <li>
+                            <p>Self-similarity: Fractals exhibit self-similarity, meaning their patterns repeat at
+                                different
+                                scales. This repetition can be either exact, where the same pattern reappears
+                                identically,
+                                or
+                                approximate, where the pattern appears similar but with slight variations.
+                                Self-similarity
+                                allows fractals to maintain their defining characteristics, irrespective of the scale at
+                                which
+                                they are viewed.</p>
+                        </li>
+                        <li>
+                            <p>Infinite detail: Fractals possess infinite complexity, revealing increasingly intricate
+                                patterns
+                                as one zooms in closer. This property implies that fractals can be explored
+                                indefinitely,
+                                always
+                                uncovering new levels of detail without reaching a finite limit.</p>
+                        </li>
+                        <li>
+                            <p>Fractional dimensions: Unlike traditional geometric shapes, which have integer dimensions
+                                (e.g.,
+                                a line has one dimension, a square has two dimensions), fractals often exhibit
+                                fractional
+                                dimensions. This characteristic measures the complexity of a fractal, capturing its
+                                space-filling properties and the degree of self-similarity it exhibits.</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="mandelbrot-gif">
+                    <img src="img/Mandelbrot.gif" alt="Mandelbrot Set Scaling Gif">
+                    <p style="text-align: center; color: gray;">Zooming into the boundary of the Mandelbrot set</p>
+                </div>
+            </div>
+            <p>I invite you to take a break from my website here and <b>take some time to read through <a
+                        href="https://www.cantorsparadise.com/mandelbrots-fractional-dimensions-4a0f27b206f2">this
+                        wonderful article.</a></b> By doing so, you will learn about the new geometrical paradigm
+                introduced
+                by fractal mathematics, which, perhaps, will open your eyes on another way of thinking about
+                dimensions when creating art!</p>
         </div>
     </section>
 
@@ -54,16 +114,88 @@
         <div class="parallax"><img src="img/2.jpg" alt="Parallax Image"></div>
     </div>
 
-    <!-- Fractal Mathematics -->
-    <section id="mathematics">
+    <!-- Fractals in Nature -->
+    <section id="nature">
         <div class="container">
-            <h2>Fractal Mathematics</h2>
-            <p>Introduction to the mathematical concepts behind fractals and famous examples.</p>
+            <h2>Fractals in Nature</h2>
+            <p>Fractals can be found all around us, unveiling the elegant patterns and structures that underpin the
+                natural world. They appear in various forms and scales, showcasing the harmonious interplay between
+                order and chaos. Fractals in nature often exhibit high efficiency and resilience, optimizing processes
+                such as nutrient distribution, space utilization, and energy conservation.</p>
+            <p>Here are some examples of natural fractals:</p>
+            <ol>
+                <li>
+                    <p>Trees and plants: The branching structure of trees is a classic example of a fractal pattern.
+                        From
+                        the trunk to the branches and twigs, self-similar patterns repeat at different scales.
+                        Similarly,
+                        the arrangement of leaves on a plant, the venation patterns, and the spirals in sunflower seed
+                        heads
+                        follow fractal geometry, allowing plants to optimize sunlight absorption and resource
+                        distribution.
+                    </p>
+                </li>
+                <li>
+                    <p>Coastlines and mountains: The irregular and intricate shapes of coastlines and mountain ranges
+                        exhibit fractal properties. As one zooms in on a coastline, the complexity increases, and
+                        self-similar patterns emerge. This phenomenon is famously illustrated by the "coastline
+                        paradox," which states that the length of a coastline depends on the scale of measurement.
+                        Mountain ranges also display fractal characteristics, with self-similar patterns observed in
+                        their ridges and valleys.</p>
+                </li>
+                <li>
+                    <p>River networks and drainage basins: The branching structure of river networks and the
+                        organization of drainage basins follow fractal patterns. These self-similar structures help
+                        distribute water and sediment efficiently across the landscape, balancing erosion and deposition
+                        processes.</p>
+                </li>
+                <li>
+                    <p>Snowflakes and crystal structures: The delicate, symmetrical patterns of snowflakes reveal the
+                        fractal nature of crystal growth. As water molecules freeze, they form intricate, self-similar
+                        structures that embody the principles of fractal geometry. Many other crystal structures, such
+                        as minerals and metals, also exhibit fractal patterns at microscopic scales.</p>
+                </li>
+            </ol>
         </div>
     </section>
 
     <div class="parallax-container">
         <div class="parallax"><img src="img/3.jpg" alt="Parallax Image"></div>
+    </div>
+
+    <!-- Fractal Mathematics -->
+    <section id="mathematics">
+        <div class="container">
+            <h2>Fractal Mathematics</h2>
+            <p>Fractal mathematics encompasses the study of intricate, self-similar patterns that emerge from simple
+                mathematical rules. It transcends traditional Euclidean geometry, delving into the realm of fractional
+                dimensions and infinite complexity. Fractals offer a glimpse into the fascinating interplay between
+                order and chaos, providing insights into diverse fields such as chaos theory, dynamical systems, and
+                number theory. </p>
+
+            <p>Now, I imagine some of you might not have read the resource that I linked earlier with a lot of
+                attention, or might have gotten confused by the process of creating fractals. So let's go through it
+                again, as it is important to understand this process for the further activities. We will work through
+                the algorithm using Koch's Curve as an example.</p>
+
+            <div class="gallery-container">
+                <div class="thumbnails"></div>
+                <div class="slides">
+                    <div><img src="img/koch_steps/0.png"></div>
+                    <div><img src="img/koch_steps/1.png"></div>
+                    <div><img src="img/koch_steps/2.png"></div>
+                    <div><img src="img/koch_steps/3.png"></div>
+                    <div><img src="img/koch_steps/4.png"></div>
+                    <div><img src="img/koch_steps/5.png"></div>
+                    <div><img src="img/koch_steps/6.png"></div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/4.jpg" alt="Parallax Image"></div>
     </div>
 
     <!-- Fractals in Digital Art -->
@@ -75,61 +207,66 @@
     </section>
 
     <div class="parallax-container">
-        <div class="parallax"><img src="img/4.jpg" alt="Parallax Image"></div>
+        <div class="parallax"><img src="img/5.jpg" alt="Parallax Image"></div>
+    </div>
+
+    <!-- Draw Fractals Yourself -->
+    <section id="creating-art">
+        <div class="container">
+            <h2>Draw Fractals by Hand</h2>
+            <p>Instruct how to draw fractals using pen and paper and why they should do so.</p>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/7.jpg" alt="Parallax Image"></div>
     </div>
 
     <!--Creating Fractal Art with Python -->
-    <section id="creating-art">
+    <section id="creating-art-python">
         <div class="container">
             <h2>Creating Fractal Art with Python</h2>
-            <p>Tutorial on generating basic fractal art using Python and introduction to the built-in Python interpreter on the website.</p>
+            <p>Tutorial on generating basic fractal art using Python and introduction to the built-in Python interpreter
+                on the website.</p>
 
-            <iframe src="https://trinket.io/embed/python/e9827ca523" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+            <iframe src="https://trinket.io/embed/python/e9827ca523" width="100%" height="600" frameborder="0"
+                marginwidth="0" marginheight="0" allowfullscreen></iframe>
         </div>
     </section>
 
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/5.jpg" alt="Parallax Image"></div>
-    </div>
-    
-    <!-- Fractal Art Gallery -->
-    <section id="gallery">
-        <div class="container">
-            <h2>Fractal Art Gallery</h2>
-            <p>Showcase of user-generated fractal art and submission form for users to share their own creations.</p>
-        </div>
-    </section>
-    
     <div class="parallax-container">
         <div class="parallax"><img src="img/6.jpg" alt="Parallax Image"></div>
     </div>
-    
+
     <!-- Resources and Further Learning -->
     <section id="resources">
         <div class="container">
             <h2>Resources and Further Learning</h2>
-            <p>List of resources for users to explore more about fractals, including books, research papers, online courses, and more.</p>
+            <p>List of resources for users to explore more about fractals, including books, research papers, online
+                courses, and more.</p>
         </div>
     </section>
-    
+
     <!-- Footer -->
     <footer class="page-footer">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
                     <h5 class="white-text">Fractal Art</h5>
-                    <p class="grey-text text-lighten-4">An educational resource on fractals and their importance in digital art.</p>
+                    <p class="grey-text text-lighten-4">An educational resource on fractals and their importance in
+                        digital art.</p>
                 </div>
             </div>
         </div>
     </footer>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var elems = document.querySelectorAll('.parallax');
             var instances = M.Parallax.init(elems);
         });
     </script>
 </body>
+
 </html>
