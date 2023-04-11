@@ -1,3 +1,8 @@
+.caption {
+    text-align: center; 
+    color: gray;
+}
+
 .parallax-container {
     height: 400px;
 }

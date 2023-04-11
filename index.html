@@ -20,6 +20,7 @@
                 <li><a href="#definition">What are Fractals?</a></li>
                 <li><a href="#nature">Fractals in Nature</a></li>
                 <li><a href="#mathematics">Fractal Mathematics</a></li>
+                <li><a href="#creating-art-manual">A Moment of Struggle</a></li>
                 <li><a href="#digital-art">Fractals in Digital Art</a></li>
                 <li><a href="#creating-art">Creating Fractal Art</a></li>
             </ul>
@@ -98,7 +99,7 @@
                 </div>
                 <div class="mandelbrot-gif">
                     <img src="img/Mandelbrot.gif" alt="Mandelbrot Set Scaling Gif">
-                    <p style="text-align: center; color: gray;">Zooming into the boundary of the Mandelbrot set</p>
+                    <p class="caption">Zooming into the boundary of the Mandelbrot set</p>
                 </div>
             </div>
             <p>I invite you to take a break from my website here and <b>take some time to read through <a
@@ -173,10 +174,34 @@
                 order and chaos, providing insights into diverse fields such as chaos theory, dynamical systems, and
                 number theory. </p>
 
-            <p>Now, I imagine some of you might not have read the resource that I linked earlier with a lot of
+            <p>Now, I imagine that some of you might not have read the resource that I linked earlier with a lot of
                 attention, or might have gotten confused by the process of creating fractals. So let's go through it
                 again, as it is important to understand this process for the further activities. We will work through
-                the algorithm using Koch's Curve as an example.</p>
+                the algorithm using Koch's Curve as an example. <i>Note that right below the algorithm there is a
+                    carousel with visualizations of the first few steps! :)</i></p>
+
+            <p>Here is how we create Koch's Curve:</p>
+
+            <ol>
+                <li>Draw a straight line. <i>(Picture 1 in carousel below.)</i></li>
+                <li>Apply the following transformation to this line:
+                    <ol>
+                        <li>Starting from the left, draw a line of the length of the original line divided by 3;</li>
+                        <li>Turn anticlockwise by 60°;</li>
+                        <li>Draw another line of the same length as the previous one in this direction;</li>
+                        <li>Turn clockwise by 120°;</li>
+                        <li>Draw another line of the same length as the previous one in this direction;</li>
+                        <li>Turn anticlockwise by 60°;</li>
+                        <li>Draw the final line of the same length as the previous one in this direction.</li>
+                    </ol>
+                </li>
+                <li>Congrats! You moved to the second order fractal. <i>(Picture 2 in carousel below.)</i> Now, you have
+                    4 lines instead of 1.</li>
+                <li>For each of these new lines, go ahead and apply the same transformation described above. By
+                    recursively doing it, you will obtain a higher-order curve (i.e. increase a fractional dimension,
+                    <i>keep scrolling the carousel below to see</i>).
+                </li>
+            </ol>
 
             <div class="gallery-container">
                 <div class="thumbnails"></div>
@@ -190,12 +215,34 @@
                     <div><img src="img/koch_steps/6.png"></div>
                 </div>
             </div>
+            <p class="caption">The carousel can be scrolled by swiping right!</p>
 
         </div>
     </section>
 
     <div class="parallax-container">
         <div class="parallax"><img src="img/4.jpg" alt="Parallax Image"></div>
+    </div>
+
+    <!-- Draw Fractals Yourself -->
+    <section id="creating-art-manual">
+        <div class="container">
+            <h2>Draw Fractals by Hand</h2>
+            <p>Now that you know the algorithmic approach behind creating fractals, try drawing them by yourself using
+                only pen and paper (or tablet). Be interesting - don't draw the Koch's Curve again :) Here are some
+                other simple fractals you can attempt to draw (but feel free to explore others too!):</p>
+            <ol>
+                <li>The Sierpinski Triangle;</li>
+                <li>Levy C Curve;</li>
+                <li>Pythagoras tree.</li>
+            </ol>
+            <p>A good point to start would be to ask google about what it is. If you are really stuck and don't know how
+                to draw these - remember about your old good ChatGPT friend! :O</p>
+        </div>
+    </section>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="img/5.jpg" alt="Parallax Image"></div>
     </div>
 
     <!-- Fractals in Digital Art -->
@@ -207,23 +254,11 @@
     </section>
 
     <div class="parallax-container">
-        <div class="parallax"><img src="img/5.jpg" alt="Parallax Image"></div>
-    </div>
-
-    <!-- Draw Fractals Yourself -->
-    <section id="creating-art">
-        <div class="container">
-            <h2>Draw Fractals by Hand</h2>
-            <p>Instruct how to draw fractals using pen and paper and why they should do so.</p>
-        </div>
-    </section>
-
-    <div class="parallax-container">
-        <div class="parallax"><img src="img/7.jpg" alt="Parallax Image"></div>
+        <div class="parallax"><img src="img/6.jpg" alt="Parallax Image"></div>
     </div>
 
     <!--Creating Fractal Art with Python -->
-    <section id="creating-art-python">
+    <section id="creating-art">
         <div class="container">
             <h2>Creating Fractal Art with Python</h2>
             <p>Tutorial on generating basic fractal art using Python and introduction to the built-in Python interpreter
@@ -235,7 +270,7 @@
     </section>
 
     <div class="parallax-container">
-        <div class="parallax"><img src="img/6.jpg" alt="Parallax Image"></div>
+        <div class="parallax"><img src="img/7.jpg" alt="Parallax Image"></div>
     </div>
 
     <!-- Resources and Further Learning -->
